@@ -1,0 +1,13 @@
+﻿@using BurgerApp.ViewModels;
+<h2>All orders:</h2>
+
+<table border="1">
+    <tr><td>User</td><td>Burger</td></tr>
+    @foreach (OrderListViewModel Order in @Model)
+    {
+        <tr>
+            <td>@Order.UserFullName</td> &nbsp;
+            <td>@Order.BurgerName</td>
+        </tr>
+    }
+</table>

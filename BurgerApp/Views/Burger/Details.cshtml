@@ -1,0 +1,20 @@
+﻿@model Burger
+
+<h2>Burger details:</h2>
+
+<p>Name: @Model.Name</p>
+<p>Price: @Model.Price</p>
+
+@{
+	string messageOne = "This burger is VEGETERIAN";
+	string messageTwo = "This burger is VEGAN";
+
+if (Model.IsVegeterian)
+{
+	<p>@messageOne</p>
+}
+if (Model.IsVegan)
+{
+	<p>@messageTwo</p>
+}
+}
