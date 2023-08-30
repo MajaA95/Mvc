@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BurgerApp.Controllers
+namespace SEDC.PizzaApp.Controllers
 {
     public class HomeController : Controller
     {
@@ -19,6 +19,18 @@ namespace BurgerApp.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        //http://localhost:[port]/AboutUs
+        [Route("AboutUs")]
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }

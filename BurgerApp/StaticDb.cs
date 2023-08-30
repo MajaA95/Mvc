@@ -58,14 +58,14 @@ namespace BurgerApp
 			new User()
 			{
 				Id = 1,
-				Name = "Bob",
+				FirstName = "Bob",
 				LastName = "Bobsky",
 				PhoneNumber = "54623462"
 			},
 			new User()
 			{
 				Id = 2,
-				Name = "Kate",
+				FirstName = "Kate",
 				LastName = "Katesky",
 				PhoneNumber = "54677462"
 			}

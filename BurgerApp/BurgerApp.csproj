@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,16 @@
     <Content Remove="NewFolder1\**" />
     <EmbeddedResource Remove="NewFolder1\**" />
     <None Remove="NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controllers\OrderController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,38 @@
+﻿﻿@using BurgerApp.ViewModels;
+@model OrderDetailsViewModel
+﻿@using BurgerApp.Models.Enums;
+
+<partial name="~/Views/Shared/Partials/_OrdersHeaderPartial.cshtml" />
+
+<h2>@ViewData["Title"]</h2>
+
+<p>@($"In this order, user {Model.UserFullName} ordered {Model.BurgerName}.")</p>
+<p>The user paid @Model.OrderPrice.</p>
+
+<h6>The phone number of the user is: @ViewBag.User.PhoneNumber.</h6>
+
+@{
+    string message = "";
+
+    if (Model.IsDelivered)
+    {
+        message = "The order was delivered";
+    }
+    else
+    {
+        message = "The order was not delivered";
+    }
+}
+
+<p>@message</p>
+
+@*Option 2*@
+
+@if (Model.IsDelivered)
+{
+    <p>The order was delivered</p>
+}
+else
+{
+    <p>The order was not delivered</p>
+}

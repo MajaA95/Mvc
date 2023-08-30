@@ -1,0 +1,15 @@
+﻿@model OrderDetailsViewModel
+﻿@using BurgerApp.Models.Enums;
+@using BurgerApp.ViewModels;
+
+
+<partial name="~/Views/Shared/Partials/_OrdersHeaderPartial.cshtml" />
+
+<h2>Are you sure that you want to delete the following order:</h2>
+
+
+<partial name="~/Views/Shared/Partials/_OrderDetailsPartial.cshtml" for="@Model" />
+
+
+<button>Yes</button>
+<button>No</button>

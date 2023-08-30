@@ -1,0 +1,11 @@
+﻿@model OrderDetailsViewModel
+﻿@using BurgerApp.Models.Enums;
+@using BurgerApp.ViewModels;
+
+
+<partial name="~/Views/Shared/Partials/_OrdersHeaderPartial.cshtml" />
+
+<h2>@ViewData["Title"]</h2>
+
+@*we send the model to the partial, so it can display the details*@
+<partial name="~/Views/Shared/Partials/_OrderDetailsPartial.cshtml" for="@Model" />
