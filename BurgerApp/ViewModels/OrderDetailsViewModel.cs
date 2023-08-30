@@ -1,4 +1,5 @@
-﻿namespace BurgerApp.ViewModels
+﻿
+namespace BurgerApp.ViewModels
 
 {
     public class OrderDetailsViewModel
